@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Ensures proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Loads Tailwind CSS from CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Page Title -->
+  <title>Student Data</title>
+</head>
+
+<!-- PAGE BODY starts here with orange background and centered content -->
+
+<body class="bg-orange-100 min-h-screen flex flex-col items-center px-4">
+  <!-- BUTTON SECTION -->
+  <div class="w-full max-w-6xl flex flex-col sm:flex-row justify-center sm:space-x-4 mt-4 space-y-4 sm:space-y-0">
+    <!-- Home Button -->
+    <button id="homebtn"
+      class="bg-orange-500 w-full sm:w-40 font-bold text-white p-2 rounded-xl hover:cursor-pointer hover:text-blue-900"
+      type="submit">Back to Home</button>
+    <!-- Register Button -->
+    <button id="register"
+      class="bg-orange-500 w-full sm:w-40 font-bold text-white p-2 rounded-xl hover:cursor-pointer hover:text-blue-900"
+      type="submit">Back to Registor</button>
+  </div>
+  <!-- TABLE SECTION -->
+  <div class="max-w-6xl w-full mt-10">
+    <!-- Title Heading -->
+    <h2 class="text-xl font-semibold mb-4 text-center">📋 Registered Students</h2>
+
+    <!-- Make table responsive by wrapping it in scrollable container -->
+    <div class="overflow-x-auto rounded-lg shadow">
+      <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+        <!-- Table Header Row -->
+        <thead class="bg-orange-500 text-white">
+          <tr>
+            <th class="p-2 text-left">Name</th>
+            <th class="p-2 text-left">Email</th>
+            <th class="p-2 text-left">Contact</th>
+            <th class="p-2 text-left">Student ID</th>
+            <th class="p-2 text-left">Address</th>
+            <th class="p-2 text-left">Delete</th>
+          </tr>
+        </thead>
+        <!-- Table Body: Filled dynamically using JavaScript -->
+        <tbody id="studentTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+  <!-- Link to external JS file for table data management -->
+  <script src="Data.js"></script>
+</body>
+
+</html>

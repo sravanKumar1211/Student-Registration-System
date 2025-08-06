@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Import Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Page Title -->
+  <title>STUDENT REGISTRATION SYSTEM</title>
+</head>
+
+<body class="bg-orange-100">
+
+  <!-- Header -->
+  <header class="mt-5 sticky top-0 z-10">
+    <!-- Navigation menu bar -->
+    <nav class="flex flex-wrap items-center justify-between bg-orange-500 mx-4 rounded-xl px-6 py-2">
+      <!-- Logo on the left side -->
+      <img src="schoolLogo.png" alt="School-Logo" class="h-12">
+      <!-- Navigation links on the right side -->
+      <ul class="flex flex-wrap gap-4 text-white font-bold text-sm md:text-base">
+        <li class="hover:cursor-pointer hover:text-blue-900">Home</li>
+        <li class="hover:cursor-pointer hover:text-blue-900">About</li>
+        <li class="hover:cursor-pointer hover:text-blue-900">Contact</li>
+        <li>
+          <!-- Link to Registration page -->
+          <a href="Registration.html" class="hover:cursor-pointer hover:text-blue-900">Register</a>
+        </li>
+        <li>
+          <!-- Link to student data display page -->
+          <a href="studentData.html" class="hover:cursor-pointer hover:text-blue-900">StudentsData</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="m-4 md:m-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
+    <!-- Left Content -->
+    <div class="flex-1 max-w-xl">
+      <!-- Main heading -->
+      <h1 class="text-blue-900 font-bold text-3xl md:text-4xl mb-4">STUDENT REGISTRATION SYSTEM</h1>
+      <!-- Register button (navigates to registration form) -->
+      <button id="register" class="bg-orange-500 mb-3 w-40 font-bold text-white p-2 rounded-xl hover:text-blue-900">
+        Register
+      </button>
+      <!-- Button to navigate to view all registered students -->
+      <button id="databtn" class="bg-orange-500 mb-3 w-40 font-bold text-white p-2 rounded-xl hover:text-blue-900">
+        All Student Data
+      </button>
+      <!-- System description -->
+      <p class="text-blue-900 text-base">
+        The Student Registration System is designed to streamline the process of collecting,
+        organizing, and managing student information in a structured and efficient manner.
+        It allows institutions to register students by capturing essential details such as name,
+        student ID, contact number, email, and address. The system helps reduce manual paperwork,
+        minimizes errors, and ensures that student data is easily accessible and manageable.
+      </p>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex-1 flex justify-center">
+      <!-- Illustration image -->
+      <img src="student.webp" alt="Student Img" class="w-full max-w-md object-cover rounded-lg shadow-lg">
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="flex flex-col md:flex-row bg-blue-900 text-white px-6 py-6 gap-8">
+    <!-- About Links -->
+    <div>
+      <ul class="text-sm space-y-1">
+        <li class="font-bold text-xl hover:text-orange-500 cursor-pointer">About</li>
+        <li class="hover:text-orange-500 cursor-pointer">Vision</li>
+        <li class="hover:text-orange-500 cursor-pointer">Mission</li>
+        <li class="hover:text-orange-500 cursor-pointer">FAQs</li>
+      </ul>
+    </div>
+
+    <!-- Courses Links -->
+    <div>
+      <ul class="text-sm space-y-1">
+        <li class="font-bold text-xl hover:text-orange-500 cursor-pointer">Courses</li>
+        <li class="hover:text-orange-500 cursor-pointer">Full Stack</li>
+        <li class="hover:text-orange-500 cursor-pointer">Data Science</li>
+        <li class="hover:text-orange-500 cursor-pointer">AI/ML</li>
+      </ul>
+    </div>
+
+    <!-- Credits -->
+    <div class="md:ml-auto">
+      <h1 class="text-sm text-white hover:text-orange-500 cursor-pointer mt-6 md:mt-0">
+        Made with love ❤️ By Sravan Kumar
+      </h1>
+    </div>
+  </footer>
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+
+</html>
